@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A done for you review of disputes and fraud settings for online stores and SaaS. Ready in five working days.">
+<title>Dispute and Fraud Tune Up</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<style>
+:root {
+  --bg: #ffffff;
+  --soft: #f5f5f7;
+  --ink: #111113;
+  --muted: #6b6b70;
+  --line: #e3e3e6;
+  --btn: #111113;
+  --btn-ink: #ffffff;
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #000000; --soft: #121214; --ink: #f5f5f7; --muted: #98989f; --line: #2a2a2e; --btn: #f5f5f7; --btn-ink: #000000; color-scheme: dark; }
+}
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font); font-size: 17px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+.wrap { max-width: 1040px; margin: 0 auto; padding-left: max(22px, env(safe-area-inset-left, 0px)); padding-right: max(22px, env(safe-area-inset-right, 0px)); }
+nav { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-block: 10px; font-size: 14px; }
+nav .name { font-weight: 600; letter-spacing: 0.02em; }
+nav a { color: var(--ink); text-decoration: none; padding: 12px 0 12px 16px; }
+nav a:hover { opacity: 0.6; }
+h1, h2, h3, p { margin: 0; }
+h1, h2 { text-wrap: balance; font-weight: 700; letter-spacing: -0.035em; line-height: 1.04; }
+h1 { font-size: clamp(2.6rem, 8.2vw, 5.4rem); }
+h2 { font-size: clamp(2rem, 5.2vw, 3.4rem); }
+h3 { font-size: 1.2rem; font-weight: 600; letter-spacing: -0.01em; }
+.muted { color: var(--muted); }
+.hero { text-align: center; padding-block: clamp(56px, 11vw, 130px) clamp(56px, 9vw, 110px); display: grid; gap: 26px; justify-items: center; }
+.hero p { font-size: clamp(1.1rem, 2.2vw, 1.4rem); max-width: 38ch; color: var(--muted); }
+.btn { display: inline-block; background: var(--btn); color: var(--btn-ink); text-decoration: none; font-size: 16px; font-weight: 500; padding: 14px 28px; border-radius: 999px; transition: opacity 0.2s; justify-self: start; }
+.hero .btn, .close .btn { justify-self: center; }
+.btn:hover { opacity: 0.78; }
+a:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; }
+section { padding-block: clamp(64px, 10vw, 120px); display: grid; gap: clamp(32px, 5vw, 56px); }
+.band { background: var(--soft); }
+.head { display: grid; gap: 14px; max-width: 22ch; }
+.nums { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 40px 32px; }
+.nums div { display: grid; gap: 8px; min-width: 0; align-content: start; }
+.nums b { font-size: clamp(2.4rem, 5vw, 3.4rem); font-weight: 700; letter-spacing: -0.04em; line-height: 1; font-variant-numeric: tabular-nums; }
+.nums span { color: var(--muted); font-size: 15px; max-width: 26ch; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 44px 40px; }
+.grid div { display: grid; gap: 8px; align-content: start; min-width: 0; }
+.grid p { color: var(--muted); font-size: 16px; }
+.rows { display: grid; gap: 0; }
+.rows > div { display: grid; gap: 12px; padding-block: 22px; border-top: 1px solid var(--line); font-size: clamp(1.05rem, 2vw, 1.3rem); }
+.rows > div:last-child { border-bottom: 1px solid var(--line); }
+.steps > div { grid-template-columns: 3.2rem 1fr; }
+.steps i { font-style: normal; color: var(--muted); font-variant-numeric: tabular-nums; }
+.steps small { display: block; font-size: 15px; color: var(--muted); margin-top: 6px; }
+.match > div { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 6px 32px; }
+.match span + span { color: var(--muted); }
+.proof { display: grid; gap: 18px; font-size: clamp(1.15rem, 2.4vw, 1.5rem); line-height: 1.4; max-width: 36ch; letter-spacing: -0.01em; }
+.plans { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; }
+.plan { background: var(--soft); border-radius: 22px; padding: 30px 26px 32px; display: grid; gap: 10px; align-content: start; min-width: 0; }
+.plan .tag { font-size: 13px; font-weight: 600; }
+.plan .price { font-size: 2.5rem; font-weight: 700; letter-spacing: -0.04em; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.plan .unit { color: var(--muted); font-size: 14px; }
+.plan p { color: var(--muted); font-size: 15.5px; }
+.plan .offer { color: var(--ink); font-weight: 500; }
+details { border-top: 1px solid var(--line); }
+details:last-child { border-bottom: 1px solid var(--line); }
+summary { cursor: pointer; list-style: none; padding-block: 22px; font-size: clamp(1.05rem, 2vw, 1.25rem); font-weight: 500; display: flex; justify-content: space-between; gap: 20px; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "+"; color: var(--muted); font-weight: 400; }
+details[open] summary::after { content: "×"; }
+summary:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+details p { color: var(--muted); padding-bottom: 24px; max-width: 60ch; }
+.faq { display: grid; gap: 0; }
+.close { text-align: center; justify-items: center; }
+.close .head { max-width: 20ch; justify-items: center; }
+footer { padding-block: 28px 48px; font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); }
+@media (prefers-reduced-motion: reduce) { .btn { transition: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <span class="name">Dispute and Fraud Tune Up</span>
+    <a href="https://calendly.com/vikrant-coinvoyage/30min">Book a free review</a>
+  </nav>
+  <div class="hero">
+    <h1>Fewer chargebacks. Better odds on the rest.</h1>
+    <p>A done for you review of disputes and fraud settings for online stores and SaaS, on any payment processor. Ready in five working days.</p>
+    <a class="btn" href="https://calendly.com/vikrant-coinvoyage/30min">Book a free review</a>
+  </div>
+</div>
+
+<div class="band">
+  <div class="wrap">
+    <section>
+      <div class="head"><h2>Disputes got expensive</h2></div>
+      <div class="nums">
+        <div><b>$15 + $15</b><span>Stripe's US fee when a dispute is filed, and again if you fight it and lose</span></div>
+        <div><b>1.5%</b><span>The fraud and dispute ratio Visa has treated as excessive since April 2026</span></div>
+        <div><b>7 days</b><span>The shortest window you may get to respond. Miss it and you lose</span></div>
+        <div><b>1</b><span>The number of times you can submit evidence</span></div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<div class="wrap">
+  <section>
+    <div class="head"><h2>What you get</h2></div>
+    <div class="grid">
+      <div><h3>Dispute review</h3><p>Your last 90 days sorted by reason, with your win rate for each and the pattern behind them.</p></div>
+      <div><h3>Fraud rules</h3><p>Block, review and 3D Secure rules written for your orders, set up with you on a call.</p></div>
+      <div><h3>Fight or accept guide</h3><p>One page your team can follow to decide which disputes are worth the fee.</p></div>
+      <div><h3>Evidence templates</h3><p>Ready responses for your three most common dispute reasons.</p></div>
+      <div><h3>Ratio check</h3><p>Where you stand against the card network limits, and what would push you over.</p></div>
+    </div>
+    <a class="btn" href="https://calendly.com/vikrant-coinvoyage/30min">Book a free review</a>
+  </section>
+
+  <section>
+    <div class="head"><h2>How it works</h2></div>
+    <div class="rows steps">
+      <div><i>01</i><span>A free 30 minute call about your business and how orders flow.</span></div>
+      <div><i>02</i><span>You add me as restricted staff on your payment account.<small>I never touch payouts and cannot see full card numbers. You can remove my access the day we finish.</small></span></div>
+      <div><i>03</i><span>Five working days later you have the report, and we set up the rules together.<small>If it arrives late, you do not pay.</small></span></div>
+    </div>
+  </section>
+</div>
+
+<div class="band">
+  <div class="wrap">
+    <section>
+      <div class="head"><h2>Most lost disputes answer the wrong question</h2></div>
+      <div class="rows match">
+        <div><span>"I did not make this purchase"</span><span>Proof of delivery will not help. The bank wants the address and CVC checks, and earlier orders from the same device.</span></div>
+        <div><span>"It never arrived"</span><span>Carrier tracking showing delivery to the address on the order, and nothing else.</span></div>
+        <div><span>"I was owed a refund"</span><span>The refund date and reference, or the policy the customer accepted at checkout.</span></div>
+      </div>
+      <div class="proof">
+        <p>I'm Vik. I run operations for a payments company and lead support for a travel booking platform.</p>
+        <p class="muted">About 82% of the card disputes I have handled from start to finish were won. Past results do not predict yours.</p>
+      </div>
+    </section>
+  </div>
+</div>
+
+<div class="wrap">
+  <section>
+    <div class="head"><h2>Pricing</h2></div>
+    <div class="plans">
+      <div class="plan">
+        <span class="tag">Start here</span>
+        <h3>Tune Up</h3>
+        <div class="price">$349</div>
+        <span class="unit">one time</span>
+        <p>The full review, rules, guide, templates and ratio check.</p>
+        <p class="offer">$199 for the first three clients, in return for a testimonial.</p>
+      </div>
+      <div class="plan">
+        <span class="tag muted">Add when needed</span>
+        <h3>Dispute Desk</h3>
+        <div class="price">20%</div>
+        <span class="unit">of what is recovered</span>
+        <p>I write and submit responses for disputes worth fighting. Nothing owed on a loss. Disputes of $100 and up.</p>
+      </div>
+      <div class="plan">
+        <span class="tag muted">For ongoing cover</span>
+        <h3>Monthly Watch</h3>
+        <div class="price">$299</div>
+        <span class="unit">per month</span>
+        <p>Rule tuning, up to 15 dispute responses, and a monthly report. Cancel anytime.</p>
+      </div>
+    </div>
+    <a class="btn" href="https://calendly.com/vikrant-coinvoyage/30min">Book a free review</a>
+  </section>
+
+  <section>
+    <div class="head"><h2>Questions</h2></div>
+    <div class="faq">
+      <details><summary>Why not use an automated tool?</summary><p>Use one for filing if you like. A tool answers disputes after they happen. This work reduces how many you get and decides which ones are worth fighting.</p></details>
+      <details><summary>Can you guarantee a win rate?</summary><p>No. The cardholder's bank decides every dispute. I can promise a complete response sent before the deadline, and straight advice on the cases you should accept.</p></details>
+      <details><summary>Which processors do you cover?</summary><p>Disputes on any of them, because the evidence rules come from the card networks. Fraud rules depend on what your processor lets you change. Stripe gives the most control.</p></details>
+      <details><summary>I only get a few disputes a month. Is it worth it?</summary><p>If they are small and rare, probably not, and I will tell you that on the free call. It pays off when disputes are growing, order values are high, or your provider has warned you.</p></details>
+    </div>
+  </section>
+
+  <section class="close">
+    <div class="head"><h2>Start with a free review</h2><p class="muted">Thirty minutes, your screen, your last few disputes.</p></div>
+    <a class="btn" href="https://calendly.com/vikrant-coinvoyage/30min">Book a free review</a>
+  </section>
+
+  <footer>Figures checked 10 November 2026. Fees are Stripe's US pricing and can change. Confirm current figures with your payment provider.</footer>
+</div>
+</body>
+</html>
